@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;500;600;700;800&family=League+Spartan:wght@600;700&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,200;1,400&family=Outfit&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;400;500;600&family=Ruda:wght@500&family=Ubuntu+Mono&display=swap");
+
+/* #### Backgrounds
+
+- Very dark desaturated blue (main background): hsl(222, 26%, 31%)
+- Very dark desaturated blue (toggle background, keypad background): hsl(223, 31%, 20%)
+- Very dark desaturated blue (screen background): hsl(224, 36%, 15%)
+
+#### Keys
+
+- Desaturated dark blue (key background): hsl(225, 21%, 49%)
+- Desaturated dark blue (key shadow): hsl(224, 28%, 35%)
+
+- Red (key background, toggle): hsl(6, 63%, 50%)
+- Dark red (key shadow): hsl(6, 70%, 34%)
+
+- Light grayish orange (key background): hsl(30, 25%, 89%)
+- Grayish orange (key shadow): hsl(28, 16%, 65%)
+
+#### Text
+
+- Very dark grayish blue: hsl(221, 14%, 31%)
+- White: hsl(0, 0%, 100%)
+
+### Theme 2
+
+#### Backgrounds
+
+- Light gray (main background): hsl(0, 0%, 90%)
+- Grayish red (toggle background, keypad background): hsl(0, 5%, 81%)
+- Very light gray (screen background): hsl(0, 0%, 93%)
+
+#### Keys
+
+- Dark moderate cyan (key background): hsl(185, 42%, 37%)
+- Very dark cyan (key shadow): hsl(185, 58%, 25%)
+
+- Orange (key background, toggle): hsl(25, 98%, 40%)
+- Dark orange (key shadow): hsl(25, 99%, 27%)
+
+- Light grayish yellow (key background): hsl(45, 7%, 89%)
+- Dark grayish orange (key shadow): hsl(35, 11%, 61%)
+
+#### Text
+
+- Very dark grayish yellow: hsl(60, 10%, 19%)
+- White (text): hsl(0, 0%, 100%)
+
+### Theme 3
+
+#### Backgrounds
+
+- Very dark violet (main background): hsl(268, 75%, 9%)
+- Very dark violet (toggle background, keypad background, screen background): hsl(268, 71%, 12%)
+
+#### Keys
+
+- Dark violet (key background): hsl(281, 89%, 26%)
+- Vivid magenta (key shadow): hsl(285, 91%, 52%)
+
+- Pure cyan (key background, toggle): hsl(176, 100%, 44%)
+- Soft cyan (key shadow): hsl(177, 92%, 70%)
+
+- Very dark violet (key background): hsl(268, 47%, 21%)
+- Dark magenta (key shadow): hsl(290, 70%, 36%)
+
+#### Text
+
+- Light yellow: hsl(52, 100%, 62%)
+- Very dark blue: hsl(198, 20%, 13%)
+- White (text): hsl(0, 0%, 100%) */
+
+@media only screen and (max-width: 400px) {
+    body {
+        text-align: left;
+        background-color: hsl(224, 28%, 35%);
+        font-size: 32;
+        color: white;
+    }
+    .App {
+        display: block;
+    }
+    .headerText {
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        background-color: hsl(223, 31%, 20%);
+        background-color: hsl(224, 28%, 35%);
+    }
+    p {
+        text-align: end;
+        width: 100%;
+    }
+    .calc-wrapper {
+        background-color: hsl(225, 21%, 49%);
+        background-color: hsl(224, 28%, 35%);
+        background-color: hsl(223, 31%, 20%);
+        color: hsl(225, 21%, 49%);
+        font-weight: bolder;
+        width: 90%;
+        border-radius: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-block: 2em;
+        padding: 5px;
+    }
+    .calc-rows {
+        display: flex;
+    }
+    .result-row {
+        display: flex;
+    }
+    .result-wrapper {
+        background-color: hsl(224, 28%, 35%);
+        width: 90%;
+        border-radius: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    body {
+        background-color: hsl(224, 28%, 35%);
+        max-width: 100%;
+    }
+    .App {
+        display: block;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p {
+        text-align: end;
+        width: 100%;
+        font-weight: bolder;
+    }
+    .headerText {
+        display: flex;
+        color: white;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        background-color: hsl(223, 31%, 20%);
+        background-color: hsl(224, 28%, 35%);
+    }
+    .calc-wrapper {
+        background-color: hsl(225, 21%, 49%);
+        background-color: hsl(224, 28%, 35%);
+        background-color: hsl(223, 31%, 20%);
+        color: hsl(225, 21%, 49%);
+        font-weight: bolder;
+        width: auto;
+        border-radius: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-block: 2em;
+        padding: 5px;
+    }
+    .result-row {
+        display: flex;
+        height: 10em;
+        width: 100%;
+        color: white;
+        font-weight: bolder;
+    }
+    .calc-rows {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+}
